@@ -1,0 +1,127 @@
+.section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-white);
+}
+
+[data-theme='dark'] .section {
+    background-color: var(--color-white);
+    /* Keep consistent or adjust if needed */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+.title {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-12);
+    color: var(--color-gray-900);
+}
+
+[data-theme='dark'] .title {
+    color: var(--color-white);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.feature {
+    text-align: center;
+    padding: var(--spacing-6);
+    border-radius: 12px;
+    transition: all var(--transition-base);
+}
+
+.feature:hover {
+    background-color: var(--color-gray-50);
+    transform: translateY(-4px);
+}
+
+[data-theme='dark'] .feature:hover {
+    background-color: var(--color-gray-50);
+}
+
+.iconWrapper {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--spacing-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-600);
+    background: var(--color-primary-100);
+    border-radius: 50%;
+}
+
+[data-theme='dark'] .iconWrapper {
+    background: rgba(37, 99, 235, 0.2);
+}
+
+.featureTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-2);
+    color: var(--color-gray-900);
+}
+
+[data-theme='dark'] .featureTitle {
+    color: var(--color-white);
+}
+
+.featureDescription {
+    color: var(--color-gray-500);
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+[data-theme='dark'] .featureDescription {
+    color: var(--color-gray-400);
+}
+
+/* Animations included from ModulesSection via shared class names or similar pattern */
+.animateOnScroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.isVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay100 {
+    transition-delay: 100ms;
+}
+
+.delay200 {
+    transition-delay: 200ms;
+}
+
+.delay300 {
+    transition-delay: 300ms;
+}
+
+.delay400 {
+    transition-delay: 400ms;
+}

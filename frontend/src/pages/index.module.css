@@ -1,0 +1,20 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+/* Main page styles */
+.mainContainer {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--color-gray-50);
+}
+
+/* Ensure no horizontal scrollbar on mobile due to animations */
+:global(body) {
+  overflow-x: hidden;
+}
+
+[data-theme='dark'] .mainContainer {
+  background-color: var(--color-gray-900);
+}

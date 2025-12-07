@@ -1,0 +1,4 @@
+[MASTER]
+ignore=CVS
+[MESSAGES CONTROL]
+disable=C0111
