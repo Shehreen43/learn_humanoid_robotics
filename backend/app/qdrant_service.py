@@ -1,7 +1,14 @@
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
+from fastapi import APIRouter
 import os
 from dotenv import load_dotenv
+
+router = APIRouter()
+
+@router.get("/health")
+def health():
+    return {"status": "qdrant service active"}
 
 load_dotenv()
 

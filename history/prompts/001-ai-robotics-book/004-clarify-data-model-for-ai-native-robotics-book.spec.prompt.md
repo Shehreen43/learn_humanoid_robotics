@@ -54,7 +54,7 @@ Success criteria:
   - Personalized learning paths based on background
 - All code examples are functional, version-pinned, and safety-compliant
 - Chapters include prerequisites, learning objectives, examples, diagrams, exercises
-- Deployment to GitHub Pages or Vercel, fully buildable
+- Deployment to GitHub Pages , fully buildable
 
 Constraints:
 - Word count per chapter: 1,500–3,500 words

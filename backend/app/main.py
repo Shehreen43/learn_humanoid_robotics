@@ -1,3 +1,4 @@
+from fastapi import FastAPI
 from app import auth_service, qdrant_service, embedding_service, learning_path_service, chat_service
 
 app = FastAPI(title="AI Robotics Book Backend")
